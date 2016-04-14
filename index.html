@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<html>
+	<head>
+		<title>Average Speaks</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/statistic.min.css" />
+		<!-- <link rel="stylesheet" href="assets/css/progress.css"/> -->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="image avatar"><img src="images/trump.jpg" alt="" /></a>
+				<h2><strong>Making Debate great again</strong></h2>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- One -->
+					<section id="one">
+						<h1>Calculate Median and Mean speaks of a tournament</h1>
+						<h3> Why does it matter? </h3>
+							<p>It might be a useful metric to evaluate a tournament</p>
+						<h3> Why median, and just not mean? </h3>
+							<p> Takes out outliers. </p>
+					</section>
+				<!-- Two -->
+					<section id="two">
+						<h2>Upload Tabs</h2>
+						<h3> Format to be used </h3>
+						<p> Remove all information except numeric scores (One column for each round)</p>
+						<div class="row">
+							<form class="upload-tabs-form" enctype="multipart/form-data">
+								<div class="hidden">
+									<input class="tabs-input" name="csv" type="file" required/>
+									<input type="readonly" name="action" value="upload-speaks"/>
+									<input class="tabs-submit" type="submit"/>
+								</div>
+	                        	<div href="javascript:void(0)" class="upload-tabs button">
+	                            	Upload
+	                       	 	</div>
+	                       	 	<div class="hidden upload-message">
+
+	                       	 	</div>
+							</form>
+						</div>
+						<div class="button calculate-avg hidden">
+							Calculate Averages
+						</div>
+					</section>
+					
+					<section class = "display_average hidden">
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Submit Averages</h2>
+						<p>It'd be pretty cool to have data of average speaks across tournaments.</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="12u 12u$(xsmall)">
+											<input type="text" name="name" id="tour-name" placeholder="Name of the tournament" />
+										</div>
+									</div>
+								</form>
+								<div class="button submit-btn" data-mean="" data-median="">
+									Submit
+								</div>
+							</div>
+						</div>
+						<div class="sheets-url hidden">
+							Click 
+							<a href="https://docs.google.com/spreadsheets/d/16b0ko4awwkC2jj5gfNn1DQ55H2YJeJB6PnKDPMOl2gM/edit?usp=sharing" target="_blank"> here </a> 
+							to check out your entry and averages of other tournaments.
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
